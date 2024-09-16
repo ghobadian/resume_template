@@ -32,9 +32,22 @@
 
 ## نتیجه گیری
 هر رزومه سازی یه سری مشکلاتی داره. پس چرا رزومه ای که میسازیم رو خودمون ۱۰۰ درصد نتونیم شخصی سازیش کنیم؟
-من اومدم و از این [قالب رزومه جالب](https://github.com/liantze/AltaCV) استفاده کردم و به دو زبان فارسی و انگلیسی رزومه خودم رو ساختم
-اگر مشکلی توی پروژه وجود داره یا با فکر میکنید که دارم اشتباه میزنم، بهم بگید
+من اومدم و از این [قالب رزومه جالب](https://github.com/liantze/AltaCV) استفاده کردم و به دو زبان پارسی و انگلیسی رزومه خودم رو ساختم
+## مزایا
+- شخصی سازی رزومه
+- کیفیت بهتر رزومه
+- مفت
+## معایب
+- نیاز به دانش درمورد لاتک
+- زمان بر تر بودن پروسه
+## نمونه
+![image](https://github.com/user-attachments/assets/5756fa90-f765-4bca-aa4f-baccdf0ab87b)
+
+اگر مشکلی توی پروژه وجود داره یا فکر میکنید که دارم اشتباه میزنم، بهم بگید
 ممنون :)
+
+
+
 
 
 
@@ -44,13 +57,13 @@ Don't you ever get disappointed by all these shity resume templates out there. I
 Therefore I tried customising this [fabulous resume template](https://github.com/liantze/AltaCV) both in persian and english to needs of a software developer.
 Hope you find it useful
 
-# Pros
+## Pros
 - full customization over your resume
 - higher quality resume
 - free
-# Cons
+## Cons
 - latex knowledge requirement
-- slower production
-# Example
+- more time consuming
+## Example
 ![image](https://github.com/user-attachments/assets/1f2ac050-1049-4582-8a03-034991dc84b7)
 
