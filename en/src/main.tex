@@ -1,0 +1,261 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.2, 28 August 2024) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear.tex}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{pubs-num.tex}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Mohammadsadegh Ghobadian}
+\tagline{Java Software Engineer}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{formal_pic_square}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{msghobadian80@gmail.com}
+  \phone{+98-(933)-256-4335}
+  % \mailaddress{Åddrésş, Street, 00000 Cóuntry}
+  \location{Tehran, Iran}
+  \homepage{msghobadian.ir}
+  % \twitter{@twitterhandle}
+  % \xtwitter{@x-handle}
+  \linkedin{ghobadian}
+  \github{ghobadian}
+  % \orcid{0000-0000-0000-0000}
+  %% You can add your own arbitrary detail with
+  %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+  % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+
+  %% Or you can declare your own field with
+  %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+  % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+  % \gitlab{your_id}
+  %%
+  %% For services and platforms like Mastodon where there isn't a
+  %% straightforward relation between the user ID/nickname and the hyperlink,
+  %% you can use \printinfo directly e.g.
+  % \printinfo{\faMastodon}{@username@instace}[https://instance.url/@username]
+  %% But if you absolutely want to create new dedicated info fields for
+  %% such platforms, then use \NewInfoField* with a star:
+  % \NewInfoField*{mastodon}{\faMastodon}
+  %% then you can use \mastodon, with TWO arguments where the 2nd argument is
+  %% the full hyperlink.
+  % \mastodon{@username@instance}{https://instance.url/@username}
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.6}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+\cvsection{Summary}
+Junior Software Developer with over 2 years of expertise in developing robust Restful applications, specializing in micro-services architecture and cloud infrastructure. Proficient in enhancing application performance through the integration of advanced technologies. Adept in DevOps practices and skilled in establishing efficient CI/CD pipelines.
+
+
+\cvsection{Experience}
+
+\cvevent{Cyber Security Engineer}{\href{https://www.spaco.co}{Spaco}}{Oct 2023 -- Present (1y)}{Tehran, Iran}
+\begin{itemize}
+\item Deployed OpenCTI and connected about 30 threat feeds to analyze cyber threat intelligence, increasing threat detection efficiency by 100\%.
+\end{itemize}
+
+\divider
+
+\cvevent{Java Developer}{\href{https://sobhan.tech}{Sobhan Tech}}{July 2022 -- Oct 2023 (1y 4m)}{Isfahan, Iran}
+\begin{itemize}
+\item Increased performance of legacy code by 10\% by optimizing duplicate SQL queries.
+\item Implemented the backend of \href{https://shopiway.ir}{shopiway.ir}, laying the groundwork for user registration, product catalog, and checkout processes, resulting in a 10\% faster launch.
+\item Extended features of \href{https://zarebin.ir}{zarebin.ir}, improving product accuracy by 20\%, and reducing API response times by using cache.
+\end{itemize}
+
+
+\cvsection{Education}
+
+\cvevent{B.Sc.\ in Computer Engineering}{\href{https://en.kntu.ac.ir}{K.N. Toosi University of Technology}}{Sept 2021 -- Present}{}
+Helped CE freshmen (and women) understand fundamentals of programming and OOP better.
+
+
+
+% use ONLY \newpage if you want to force a page break for
+% ONLY the current column
+\newpage
+
+
+%% Switch to the right column. This will now automatically move to the second
+%% page if the content is too long.
+\switchcolumn
+
+
+\cvsection{Skills}
+
+
+
+\cvtag{Java}
+\cvtag{Spring}
+\cvtag{Git}
+\cvtag{SQL}
+\cvtag{OOP}
+\cvtag{CI/CD}
+\cvtag{TDD}
+\cvtag{Redis}
+\cvtag{MongoDB}
+
+\divider\smallskip
+
+\cvtag{Problem Solving}
+\cvtag{Team work}
+\cvtag{Perseverance}
+\cvtag{Organization}
+\cvtag{Time Management}
+\cvtag{Confidence}
+
+
+
+% \cvsection{Languages}
+
+% \cvskill{English}{5}
+% \divider
+
+% \cvskill{Spanish}{4}
+% \divider
+
+% \cvskill{German}{3.5} %% Supports X.5 values.
+
+%% Yeah I didn't spend too much time making all the
+%% spacing consistent... sorry. Use \smallskip, \medskip,
+%% \bigskip, \vspace etc to make adjustments.
+\medskip
+
+\cvsection{Projects}
+
+\cvevent{\href{https://github.com/ghobadian/golestan}{Simple Grading \& Course Management System}}{Open Source Contribution}{}{}
+Developed backend for a grading and course management system for university students.
+
+\divider
+
+\cvevent{\href{https://github.com/ghobadian/SimpleMessanger}{Simple Chat App}}{Open Source Contribution}{}{}
+Coded an online chatting app using socket programming and client-server architecture.
+
+
+
+\medskip
+
+\cvsection{Certificates}
+\cvevent{\href{https://www.coursera.org/account/accomplishments/verify/16C32QLBKURP}{Building Scalable Java Microservices with Spring Boot and Spring Cloud}}{Google Cloud}{Aug 2024}{}
+\divider
+
+\cvevent{\href{https://university.redis.com/certificates/a6d6561bb5844056911f177966a74d3b}{Redis for Java Developers}}{Redis University}{Sept 2024}{}
+
+\divider
+
+\cvevent{\href{https://maktabkhooneh.org/certificates/MK-9826SE/}{Network Principles}}{Maktabkhooneh}{Aug 2024}{}
+
+\divider
+
+\cvevent{\href{https://www.sololearn.com/de/certificates/CC-DPFVE4JV}{Java Intermediate}}{Sololearn}{Aug 2024}{}
+
+
+\divider
+
+\cvevent{\href{https://www.hackerrank.com/certificates/21a5a3247803}{SQL Intermediate}}{HackerRank}{Aug 2024}{}
+
+\end{paracol}
+
+
+\end{document}
