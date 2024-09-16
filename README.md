@@ -43,6 +43,8 @@
 - زمان بر تر بودن پروسه
 ## نمونه
 ![image](https://github.com/user-attachments/assets/5756fa90-f765-4bca-aa4f-baccdf0ab87b)
+## نحوه تولید خروجی PDF
+برای اینکه عذاب نصب کامپایلر و dependency های مورد نیاز (no pun intended) رو مثل من نکشید، پیشنهاد میکنم که از سایت [overleaf](https://www.overleaf.com/) استفاده کنید. تنها کافیه که محتوای پوشه `src` رو در یک پروژه در سایت overleaf آپلود کنید.
 
 اگر مشکلی توی پروژه وجود داره یا فکر میکنید که دارم اشتباه میزنم، بهم بگید
 ممنون :)
@@ -67,4 +69,6 @@ Hope you find it useful
 - more time consuming
 ## Example
 ![image](https://github.com/user-attachments/assets/1f2ac050-1049-4582-8a03-034991dc84b7)
+## How to get the PDF output
+For easier experience, use [overleaf](https://www.overleaf.com/). Just upload the `src` directory contents to a project in overleaf website.
 
