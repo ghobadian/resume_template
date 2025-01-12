@@ -46,9 +46,12 @@
 برای اینکه عذاب نصب کامپایلر و dependency های مورد نیاز (no pun intended) رو مثل من نکشید، پیشنهاد میکنم که از سایت [overleaf](https://www.overleaf.com/) استفاده کنید. تنها کافیه که محتوای پوشه `src` رو در یک پروژه در سایت overleaf آپلود کنید.
 
 نکته مهم:
+
+
 برای اینکه در کامپایل رزومه فارسی به مشکل نخورید باید کامپایلر را از pdfLatex به XeLatex تغییر دهید. مراحل به این صورت است:
+![2025-01-12_19-49](https://github.com/user-attachments/assets/ff440447-14ff-48c3-b0d4-d3531b945317)
 ![image](https://github.com/user-attachments/assets/2ccbaa7c-9303-4195-99f6-4b453b6f7db3)
-![Uploading image.png…]()
+
 
 
 
